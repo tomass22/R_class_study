@@ -23,6 +23,9 @@ fLibScales <- paste0(fLib, '/languageserver')
 fLibScales
 unlink(fLibScales, recursive=TRUE)
 install.packages("languageserver")
+install.packages('languageserver', "C:\\RLibs", 'http://cran.stat.sfu.ca/')
+#출처: https://sealover.tistory.com/209 [바닷가에서 놀자!!]
+
 install.packages("languageserver", INSTALL_opts = '--no-lock')
 
 getwd()
