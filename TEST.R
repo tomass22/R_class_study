@@ -1,9 +1,6 @@
 
-.libPaths()
-.libPaths()
 
 #[1] "C:/Program Files/R/R-4.0.2/library"
-#[출처] [R] 패키지 저장 경로 변경하기|작성자 리얼
 
 ##<languageserver 패키지 설치>
 #Sys.getenv('R_LIBS_USER')
@@ -28,14 +25,12 @@
 #fLibScales
 #unlink(fLibScales, recursive=TRUE)
 #install.packages( " httpgd " )
-remotes::install_github("nx10/httpgd")
+#remotes::install_github("nx10/httpgd")
 
 
 ##Rtools 설치
 # writeLines('PATH="${RTOOLS40_HOME}\\usr\\bin;${PATH}"', con = "~/.Renviron")
-
 # Sys.which("make")
-
 # Sys.getenv('R_LIBS_USER')
 # fLib <- Sys.getenv('R_LIBS_USER')
 # fLib
@@ -44,16 +39,84 @@ remotes::install_github("nx10/httpgd")
 # unlink(fLibScales, recursive=TRUE)
 # install.packages("jsonlite", type = "source")
 
-##radian 설치
+## radian 설치
+## pip3 install -U git+https://github.com/randy3k/radian
+# Do not copy the whole configuration, just specify what you need!
+# see https://help.farbox.com/pygments.html
+# for a list of supported color schemes, default scheme is "native"
+# options(radian.color_scheme = "native")
+
+# # either  `"emacs"` (default) or `"vi"`.
+# options(radian.editing_mode = "emacs")
+# # enable various emacs bindings in vi insert mode
+# options(radian.emacs_bindings_in_vi_insert_mode = FALSE)
+# # show vi mode state when radian.editing_mode is `vi`
+# options(radian.show_vi_mode_prompt = TRUE)
+# options(radian.vi_mode_prompt = "\033[0;34m[{}]\033[0m ")
+
+# # indent continuation lines
+# # turn this off if you want to copy code without the extra indentation;
+# # but it leads to less elegent layout
+# options(radian.indent_lines = TRUE)
+
+# # auto match brackets and quotes
+# options(radian.auto_match = TRUE)
+
+# # enable the [prompt_toolkit](https://python-prompt-toolkit.readthedocs.io/en/master/index.html) [`auto_suggest` feature](https://python-prompt-toolkit.readthedocs.io/en/master/pages/asking_for_input.html#auto-suggestion)
+# # this option is experimental and is known to break python prompt, use it with caution
+# options(radian.auto_suggest = FALSE)
+
+# # highlight matching bracket
+# options(radian.highlight_matching_bracket = FALSE)
+
+# # auto indentation for new line and curly braces
+# options(radian.auto_indentation = TRUE)
+# options(radian.tab_size = 4)
+
+# # pop up completion while typing
+# options(radian.complete_while_typing = TRUE)
+# # the minimum length of prefix to trigger auto completions
+# options(radian.completion_prefix_length = 2)
+# # timeout in seconds to cancel completion if it takes too long
+# # set it to 0 to disable it
+# options(radian.completion_timeout = 0.05)
+# # add spaces around equals in function argument completion
+# options(radian.completion_adding_spaces_around_equals = TRUE)
+
+# # automatically adjust R buffer size based on terminal width
+# options(radian.auto_width = TRUE)
+
+# # insert new line between prompts
+# options(radian.insert_new_line = TRUE)
+
+# # max number of history records
+# options(radian.history_size = 20000)
+# # where the global history is stored, environmental variables will be expanded
+# # note that "~" is expanded to %USERPROFILE% or %HOME% in Windows
+# options(radian.global_history_file = "~/.radian_history")
+# # the filename that local history is stored, this file would be used instead of
+# # `radian.global_history_file` if it exists in the current working directory
+# options(radian.local_history_file = ".radian_history")
+# # when using history search (ctrl-r/ctrl-s in emacs mode), do not show duplicate results
+# options(radian.history_search_no_duplicates = FALSE)
+# # ignore case in history search
+# options(radian.history_search_ignore_case = FALSE)
+# # do not save debug browser commands such as `Q` in history
+# options(radian.history_ignore_browser_commands = TRUE)
+
+# # custom prompt for different modes
+# options(radian.prompt = "\033[0;34mr$>\033[0m ")
+# options(radian.shell_prompt = "\033[0;31m#!>\033[0m ")
+# options(radian.browse_prompt = "\033[0;33mBrowse[{}]>\033[0m ")
+
+# # stderr color format
+# options(radian.stderr_format = "\033[0;31m{}\033[0m")
+
+# # enable reticulate prompt and trigger `~`
+# options(radian.enable_reticulate_prompt = TRUE)
 
 
-
-
-
-
-
-
-
+##
 
 
 
